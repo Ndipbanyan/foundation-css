@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 
 :root{
-    --primary-color:rgb(1, 37, 37);
+    --primary-color:rgb(2, 110, 110);
+    --secondary-color:rgb(1, 56, 56);
+    --dark-color:rgb(0, 37, 37);
+    --light-color:rgb(204, 248, 248);
 }
 
 *{
@@ -25,7 +28,7 @@ a{
     text-transform: capitalize;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
     font-weight:300;
     line-height: 1.2;
     margin: 10px 0;  
@@ -140,5 +143,16 @@ img{
     grid-column: 1/span 2;
     grid-row: 1/span 2;
 } */
+/* Cloud */
 
-
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
+}
+/* languages */
+.languages .flex{
+    /* flex-wrap: wrap; */
+}
+.languages .card{
+    text-align: center;
+    /* margin: 18px 10px 40px; */
+}
