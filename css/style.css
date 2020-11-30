@@ -25,7 +25,7 @@ a{
     text-transform: capitalize;
 }
 
-h1,h2{
+h1,h2,h3{
     font-weight:300;
     line-height: 1.2;
     margin: 10px 0;  
@@ -115,55 +115,28 @@ img{
     left: 0;
     background: #fff;
     transform: skewY(-3deg);
-    
-    /* transform: skewX(-180deg); */
 }
-/* utilities */
-.container{
-    
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-
+   
+/* Statistics */
+.stats{
+    padding-top: 100px;
 }
-.btn{
-    display: inline inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.stats-heading{
+    max-width: 500px;
+    margin: auto;
 }
-.btn:hover{
-    transform: scale(0.9);
+.stats .grid h3{
+    font-size: 35px;
 }
-.btn-outline{
-    background: transparent;
-    border: 1px #fff solid;
+.stats .grid p{
+    font-size: 20px;
+    font-weight: bold;
 }
-
-.card{
-    background: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2 ) ;
-    padding:20px;
-    margin: 10px;
+.cli .grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
-
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height:100%;
+.cli .grid>*:first-child{
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
 }
