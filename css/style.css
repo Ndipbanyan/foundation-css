@@ -79,10 +79,32 @@ img{
 
 }
 .showcase .grid{
+    overflow: visible;
     grid-template-columns: 55% 45%;
     gap: 30px;
 }
-
+.showcase-form{
+    position: relative;
+    top:60px;
+    height:350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 1000;
+    justify-self: flex-end;
+}
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+.showcase input[type="text"],
+.showcase input[type="email"]{
+    border:0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    font-size: 16px;
+}
+.showcase-form input:focus{
+    outline: none;
+}
 /* utilities */
 .container{
     
@@ -91,6 +113,22 @@ img{
     overflow: auto;
     padding: 0 40px;
 
+}
+.btn{
+    display: inline inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    transform: scale(0.9);
+}
+.btn-outline{
+    background: transparent;
+    border: 1px #fff solid;
 }
 
 .card{
