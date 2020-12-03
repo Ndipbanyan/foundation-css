@@ -4,7 +4,7 @@
     --primary-color:rgb(2, 110, 110);
     --secondary-color:rgb(1, 56, 56);
     --dark-color:rgb(0, 37, 37);
-    --light-color:#fff;
+    --light-color:rgb(228, 225, 225);
 }
 
 *{
@@ -166,7 +166,8 @@ img{
     margin-bottom: 10px;
 }
 
-.features-head img
+.features-head img,
+.docs-head img
 {
     width: 200px;
     justify-self: flex-end;
