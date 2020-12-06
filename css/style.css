@@ -96,6 +96,7 @@ img{
     padding: 40px;
     z-index: 1000;
     justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in ;
 }
 .showcase-form .form-control{
     margin: 30px 0;
@@ -110,8 +111,9 @@ img{
 .showcase-form input:focus{
     outline: none;
 }
+
 .showcase-text{
-    animation: slideInfromLeft 1s ease-in ;
+    animation: slideInFromLeft 1s ease-in ;
 }
 .showcase::before,
 .showcase::after{
@@ -128,6 +130,7 @@ img{
 /* Statistics */
 .stats{
     padding-top: 100px;
+    animation: slideInFromBottom 1s ease-in ;
 }
 .stats-heading{
     max-width: 500px;
